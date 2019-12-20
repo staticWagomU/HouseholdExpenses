@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>View</h1>
+    <h1>Input > Second</h1>
   </div>
 </template>
 

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/**
+ *foundation\base.css
+ */
+
+* {
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
+  user-select: none;
+  -webkit-touch-callout: none;
+
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+ol {
+  list-style-type: none;
+}

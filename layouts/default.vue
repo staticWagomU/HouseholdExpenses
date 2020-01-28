@@ -1,6 +1,13 @@
 <template>
   <div>
     <nuxt />
+    <nav class="bottomMenu">
+      <div class="l-flex">
+      <nuxt-link to="registry" class="bottomMenu__item">登録</nuxt-link>
+      <nuxt-link to="input" class="bottomMenu__item">入力</nuxt-link>
+      <nuxt-link to="view" class="bottomMenu__item">データ表示</nuxt-link>
+      </div>
+    </nav>
   </div>
 </template>
 
@@ -24,32 +31,26 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.bottomMenu {
+  width: 100vw;
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.l-flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.bottomMenu__item {
+  width: 100%;
+  height: 100%;
+  line-height: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background: #00f;
+  color: white;
 }
 </style>
